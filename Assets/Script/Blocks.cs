@@ -65,3 +65,4 @@ public class Blocks : MonoBehaviour
           Time.timeScale=0;
      }
 }
+ 

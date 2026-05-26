@@ -307,9 +307,9 @@ public class Board : MonoBehaviour
         var polyomino=Polyominos.Get(polyominoIndex);
         var polyominoRows=polyomino.GetLength(0);
         var polyominoColumns=polyomino.GetLength(1);
-        for (var r =0;r<Size-polyominoRows;r++)
+        for (var r =0;r<=Size-polyominoRows;r++)
         {
-            for (var c =0;c<Size - polyominoColumns;c++)
+            for (var c =0;c<=Size - polyominoColumns;c++)
             {
                 if(Can_Place(r,c,polyominoColumns,polyominoRows,polyomino)==true)
                 {
