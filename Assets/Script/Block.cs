@@ -69,6 +69,7 @@ public class Block : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         if (Time.timeScale == 0) return;
         inputPoint=mainCamera.ScreenToWorldPoint(Input.mousePosition);// vi tri nhan chuot
         blocks.Restsorting();
