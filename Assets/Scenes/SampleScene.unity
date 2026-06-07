@@ -631,7 +631,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 330229515}
-        m_TargetAssemblyTypeName: Restartscene, Assembly-CSharp
+        m_TargetAssemblyTypeName: RestartsceneButton, Assembly-CSharp
         m_MethodName: OnReplayClick
         m_Mode: 1
         m_Arguments:
@@ -691,7 +691,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da1e01548f486bd4daeef0858420f729, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Restartscene
+  m_EditorClassIdentifier: Assembly-CSharp::RestartsceneButton
+  button_normal: {fileID: 1194771161877757323, guid: 1afebab3f83148e40a2ac5e5cd78195f, type: 3}
+  button_click: {fileID: 5989990841253018040, guid: b60e7d224cdb09a479dc0beeae4fd201, type: 3}
 --- !u!4 &332373554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8185850400440933252, guid: 53bd4971b5f44f14e937da56f3d97da0, type: 3}
