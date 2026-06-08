@@ -20,7 +20,12 @@ public class Board : MonoBehaviour
     private readonly List<Vector2Int> hoverPoints =new();
     private readonly List<int> fullLineColum=new();
     private readonly List<int> fullLineRow=new();
-    void Start()
+    private Sound soundSFX;
+    void Awake()
+    {
+        soundSFX= GameObject.FindGameObjectWithTag("Audio").GetComponent<Sound>();
+    }
+    void Start()
     {
         for ( var  r =0;r<Size;r++ )
         {
@@ -100,6 +105,7 @@ public class Board : MonoBehaviour
         if(hoverPoints.Count>0)
         {
             Place(currentDragPoint,polyominoColumns,polyominoRows);
+            soundSFX.play_sfx(soundSFX.placeBlock);
             return true;
         }
         return false;
@@ -119,8 +125,12 @@ public class Board : MonoBehaviour
     {
         checkLineRow(point.y, point.y + polyominoRows);
         checkLineColum(point.x, point.x + polyominoColumns);
+        if (fullLineColum.Count > 0 || fullLineRow.Count > 0)
+        {
+            soundSFX.play_sfx(soundSFX.lineclear);
+        }
         ClearfullLine();
-
+        
     }
     private void ClearfullLine()
     {
