@@ -17,7 +17,7 @@ public class Sound : MonoBehaviour
     }
     public void SetVolumesfx()
     {
-       float sfxvolume= slider.value;
-       my_mixer.SetFloat("sfx",sfxvolume);
+       float sfxvolume= Mathf.Clamp(slider.value,0.00001f,20f);
+       my_mixer.SetFloat("sfx",Mathf.Log10(sfxvolume)*20);
     }
 }
