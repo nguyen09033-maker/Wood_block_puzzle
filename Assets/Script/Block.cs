@@ -6,7 +6,8 @@ public class Block : MonoBehaviour
     public const int Size= 5;
     private readonly Vector3 inputoffset = new Vector3(0.0f,2.0f,0.0f); // khoang cach giua chuot va block
     [SerializeField] private Cell cellPrefab;
-    private SortingGroup sortingGroup ;
+    private SortingGroup sortingGroup;
+
     private readonly Cell [,] cells=new Cell[Size,Size]; 
     private Vector3 position;
     private Vector3 scale;

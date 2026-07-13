@@ -1,0 +1,23 @@
+using UnityEngine;
+using UnityEngine.UI;
+public class Setting_button : MonoBehaviour
+{
+    private Image targetImage;
+    public Sprite button_normal;
+    public Sprite button_click;
+    public GameObject settingPanel; 
+    public void Awake()
+    {
+        targetImage=GetComponent<Image>();
+        if (targetImage != null && button_normal != null)
+        {
+            targetImage.sprite = button_normal;
+        }
+       
+    }
+        public void OnReplayClick()
+    {
+        targetImage.sprite= button_click;
+        settingPanel.SetActive(!settingPanel.activeSelf);
+    }
+}

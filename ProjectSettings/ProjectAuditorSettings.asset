@@ -51,41 +51,7 @@ MonoBehaviour:
       - Key: LoadInBackGroundClipSizeThresholdBytes
         Value: 204800
     - PlatformGroup:
-        m_String: Metro
-      m_SerializedParams:
-      - Key: StreamingAssetsFolderSizeLimit
-        Value: 50
-      - Key: SpriteAtlasEmptySpaceLimit
-        Value: 50
-      - Key: TextureStreamingMipmapsSizeLimit
-        Value: 4000
-      - Key: StreamingClipThresholdBytes
-        Value: 218294
-      - Key: LongDecompressedClipThresholdBytes
-        Value: 204800
-      - Key: LongCompressedMobileClipThresholdBytes
-        Value: 204800
-      - Key: LoadInBackGroundClipSizeThresholdBytes
-        Value: 204800
-    - PlatformGroup:
         m_String: Standalone
-      m_SerializedParams:
-      - Key: StreamingAssetsFolderSizeLimit
-        Value: 50
-      - Key: SpriteAtlasEmptySpaceLimit
-        Value: 50
-      - Key: TextureStreamingMipmapsSizeLimit
-        Value: 4000
-      - Key: StreamingClipThresholdBytes
-        Value: 218294
-      - Key: LongDecompressedClipThresholdBytes
-        Value: 204800
-      - Key: LongCompressedMobileClipThresholdBytes
-        Value: 204800
-      - Key: LoadInBackGroundClipSizeThresholdBytes
-        Value: 204800
-    - PlatformGroup:
-        m_String: VisionOS
       m_SerializedParams:
       - Key: StreamingAssetsFolderSizeLimit
         Value: 50
@@ -120,23 +86,6 @@ MonoBehaviour:
         Value: 204800
     - PlatformGroup:
         m_String: iPhone
-      m_SerializedParams:
-      - Key: StreamingAssetsFolderSizeLimit
-        Value: 50
-      - Key: SpriteAtlasEmptySpaceLimit
-        Value: 50
-      - Key: TextureStreamingMipmapsSizeLimit
-        Value: 4000
-      - Key: StreamingClipThresholdBytes
-        Value: 218294
-      - Key: LongDecompressedClipThresholdBytes
-        Value: 204800
-      - Key: LongCompressedMobileClipThresholdBytes
-        Value: 204800
-      - Key: LoadInBackGroundClipSizeThresholdBytes
-        Value: 204800
-    - PlatformGroup:
-        m_String: tvOS
       m_SerializedParams:
       - Key: StreamingAssetsFolderSizeLimit
         Value: 50
