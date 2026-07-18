@@ -964,7 +964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SFX
+  m_text: Sound
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1287,8 +1287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -442.9, y: -951.79}
-  m_SizeDelta: {x: 2.8686, y: 1.8753}
+  m_AnchoredPosition: {x: -442.75, y: -951.85126}
+  m_SizeDelta: {x: 1.7709, y: 1.5926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619807555
 MonoBehaviour:
@@ -1334,8 +1334,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RestartsceneButton, Assembly-CSharp
+      - m_Target: {fileID: 619807558}
+        m_TargetAssemblyTypeName: Setting_button, Assembly-CSharp
         m_MethodName: OnReplayClick
         m_Mode: 1
         m_Arguments:
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3822675230927641974, guid: f5fa5c7c8757a0943b3f0b0a44dee92b, type: 3}
+  m_Sprite: {fileID: 6829858724382834966, guid: 0836055b49c24d449aba31dca6ad7af8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1396,8 +1396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6ab8d800ff5f34bbbea868c84bdd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Setting_button
-  button_normal: {fileID: 3822675230927641974, guid: f5fa5c7c8757a0943b3f0b0a44dee92b, type: 3}
-  button_click: {fileID: -4454698233370107277, guid: 533432fc975a6f148a2f0a0700d6825d, type: 3}
+  button_normal: {fileID: 6829858724382834966, guid: 0836055b49c24d449aba31dca6ad7af8, type: 3}
+  button_click: {fileID: -6951988170595416391, guid: f560a80edc31a7d488aaf71d70fc3121, type: 3}
   settingPanel: {fileID: 907876402}
 --- !u!1 &681306653
 GameObject:

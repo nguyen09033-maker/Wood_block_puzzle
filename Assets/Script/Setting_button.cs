@@ -15,9 +15,17 @@ public class Setting_button : MonoBehaviour
         }
        
     }
+
         public void OnReplayClick()
     {
+        float delay = 0.6f;
         targetImage.sprite= button_click;
         settingPanel.SetActive(!settingPanel.activeSelf);
+        Invoke("ResetButtonSprite", delay);
+    }
+
+    private void ResetButtonSprite()
+    {
+        targetImage.sprite = button_normal;
     }
 }
