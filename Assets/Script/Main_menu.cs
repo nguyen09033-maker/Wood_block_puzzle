@@ -7,4 +7,8 @@ public class Main_menu : MonoBehaviour
         SceneManager.LoadScene("Play_Scene");
         Debug.Log("nhan play");
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
