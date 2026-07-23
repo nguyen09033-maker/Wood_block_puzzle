@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Setting_button : MonoBehaviour
 {
     private Image targetImage;
@@ -27,5 +28,9 @@ public class Setting_button : MonoBehaviour
     private void ResetButtonSprite()
     {
         targetImage.sprite = button_normal;
+    }
+    public void BackMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
