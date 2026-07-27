@@ -439,7 +439,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 1231350736}
   - component: {fileID: 1231350738}
   - component: {fileID: 1231350737}
+  - component: {fileID: 1231350739}
   m_Layer: 5
   m_Name: loadingBoder
   m_TagString: Untagged
@@ -528,6 +529,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231350735}
   m_CullTransparentMesh: 1
+--- !u!114 &1231350739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231350735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2c800055a315248883220dfc30faf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::loadingManager
+  progressBar: {fileID: 894325813}
+  fillSpeed: 1
 --- !u!1 &1402928957
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ public class Main_menu : MonoBehaviour
 {
     public void LoadGame()
     {
-        SceneManager.LoadScene("Play_Scene");
+        loadingManager.next_scene="Play_Scene";
+        SceneManager.LoadScene("Loading_Scene");
         Debug.Log("nhan play");
     }
     public void Exit()
