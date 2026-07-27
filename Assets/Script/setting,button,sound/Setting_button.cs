@@ -31,6 +31,7 @@ public class Setting_button : MonoBehaviour
     }
     public void BackMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        loadingManager.next_scene="MainMenu";
+        SceneManager.LoadScene("Loading_Scene");
     }
 }
