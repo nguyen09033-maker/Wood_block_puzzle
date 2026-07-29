@@ -20,6 +20,7 @@ if (targetImage != null && button_normal != null)
         public void OnReplayClick()
     {
         targetImage.sprite=button_click;
+        Block.GameOver=false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

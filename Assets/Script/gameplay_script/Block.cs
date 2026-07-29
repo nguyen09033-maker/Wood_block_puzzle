@@ -4,10 +4,11 @@ using UnityEngine.Rendering;
 public class Block : MonoBehaviour
 {
     public const int Size= 5;
+    public static bool GameOver=false;
     private readonly Vector3 inputoffset = new Vector3(0.0f,2.0f,0.0f); // khoang cach giua chuot va block
     [SerializeField] private Cell cellPrefab;
     private SortingGroup sortingGroup;
-
+private Vector3 initialPosition;
     private readonly Cell [,] cells=new Cell[Size,Size]; 
     private Vector3 position;
     private Vector3 scale;
@@ -71,7 +72,7 @@ public class Block : MonoBehaviour
     private void OnMouseDown()
     {
         
-        if (Time.timeScale == 0) return;
+        if (GameOver == true) return;
         inputPoint=mainCamera.ScreenToWorldPoint(Input.mousePosition);// vi tri nhan chuot
         blocks.Restsorting();
         Setsortingoder(1);
@@ -83,7 +84,7 @@ public class Block : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (Time.timeScale == 0) return;
+        if (GameOver == true) return;
         Debug.Log("OnMouseDrag");
         var inputDelta= (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition)-inputPoint;// khoan cach keo chuot va vi tri nhan ban dau
         transform.position=position+inputoffset+(Vector3)inputDelta;
@@ -94,7 +95,7 @@ public class Block : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        if (Time.timeScale == 0) return;
+        if (GameOver == true) return;
         currentDragPoint=Vector2Int.RoundToInt((Vector2)transform.position-center);
         if(board.Place(currentDragPoint,polyominoIndex)==true)
         {

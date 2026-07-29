@@ -60,9 +60,9 @@ public class Blocks : MonoBehaviour
             blocks[i].Setsortingoder(0);
         }
     }
-    public void losegame()
+     public void losegame()
      {
-          Time.timeScale=0;
+          Block.GameOver=true;
      }
 }
  
