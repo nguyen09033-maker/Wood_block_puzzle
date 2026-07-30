@@ -6,6 +6,7 @@ public class Blocks : MonoBehaviour
      private int [] polyominoIndex;
      [SerializeField] private Block[] blocks;
      private int blockcount=0;
+     public GameObject GameoverPanel;
     void Start()
     {
      var blockWidth= (float) Board.Size/blocks.Length;
@@ -62,6 +63,7 @@ public class Blocks : MonoBehaviour
     }
      public void losegame()
      {
+          GameoverPanel.SetActive(true);
           Block.GameOver=true;
      }
 }
