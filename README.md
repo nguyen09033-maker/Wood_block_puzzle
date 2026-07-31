@@ -7,7 +7,7 @@
 ## 📥 Tải Game Chơi Thử
 Bạn có thể tải bản build chơi thử mới nhất (dành cho Windows) tại mục **Releases**:
 
-👉 **[Tải bản chơi thử tại đây (Releases)](https://github.com/nguyen009033-maker/wood_block_puzzle/releases)**
+👉 **[Tải bản chơi thử tại đây (Releases)](https://github.com/nguyen09033-maker/Wood_block_puzzle/releases/tag/v1.0)**
 
 ---
 
