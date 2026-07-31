@@ -40,6 +40,4 @@ Bàn chơi được quản lý theo mảng dữ liệu (Grid Data) với 3 trạ
 ## 🎨 Tài nguyên Dự án 
 
 * Dự án sử dụng kết hợp với các asset miễn phí  và hình ảnh được hỗ trợ tạo bởi trí tuệ nhân tạo(ChatGPT, Gemini):
-## Hình ảnh sơ lược về game 
-![alt text]({5E19C926-699D-45FF-BF30-BE10276A9EAE}.png)
-![alt text]({BC2DAB14-CE75-4DE7-BB01-97A419785AAC}.png)
+
